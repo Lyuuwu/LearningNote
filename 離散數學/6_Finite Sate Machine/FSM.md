@@ -2,7 +2,7 @@
 
 ## Definition of FSM
 
-FSM is a five-tuple $ M = \{ S, I, O, v, w \} $
+FSM is a five-tuple $M = \{ S, I, O, v, w \}$
 
 - S: the set of interal states of M
 - I: the set of input
@@ -14,11 +14,11 @@ FSM is a five-tuple $ M = \{ S, I, O, v, w \} $
 
 ## How to work ?
 
-Given the FSM $ M = \{ S, I, O, v, w \} $, we designate a start state. With each consecutive input, the state transitions, resulting in a corresponding output.
+Given the FSM $M = \{ S, I, O, v, w \}$, we designate a start state. With each consecutive input, the state transitions, resulting in a corresponding output.
 
 ### Example
 
-Consider the FSM $ M = \{ S, I, O, v, w \} $, where $ S = \{ s_0, s_1, s_2 \} $, $ I = O = \{ 0, 1 \} $, and $v, w$ are given by the state table below. $s_0$ is designated as the starting state.
+Consider the FSM $M = \{ S, I, O, v, w \}$, where $S = \{ s_0, s_1, s_2 \}$, $I = O = \{ 0, 1 \}$, and $v, w$ are given by the state table below. $s_0$ is designated as the starting state.
 
 |       |  v          |  w  |
 |:-----:|:-----------:|:---:|
@@ -130,7 +130,7 @@ A transcient state $s$ inidicate that there is no $x$ for which $v(s, x)=s$. Con
 A sink state $s$ indicates that the state is trapped. Consequently, for all inputs, there is no transition occurence to sink state $s$.  
 
 **Submachine**  
-Let $ M = \{ S, O, I, v, w \} $, where $ S_1 \in S $, $ O_1 \in O $, $ I_1 \in I $, $ v_1: S_1 \times I_1 = S_1 $, and $ w_1: S_1 \times I_1 = O_1 $.  
+Let $M = \{ S, O, I, v, w \}$, where $S_1 \in S$, $O_1 \in O$, $I_1 \in I$, $v_1: S_1 \times I_1 = S_1$, and $w_1: S_1 \times I_1 = O_1$.  
 If $M_1 = \{ S_1, O_1, I_1, v_1, w_1 \}$, we say $M_1$ is a submachine of $M$.
 
 **Strongly connected machine**

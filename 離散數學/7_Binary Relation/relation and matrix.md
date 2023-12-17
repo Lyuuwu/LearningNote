@@ -79,16 +79,14 @@ If $A = \{ 1, 2, 3, 4 \}$, $B = \{ w, x, y, z \}$, and $C = \{ 5, 6, 7 \}$.
 Consider $\char"1d4ad _1 = \{ (1, x), (2, x), (3, y), (3, z) \}$, a relation from $A$ to $B$, and $\char"1d4ad _2 = \{ (w, 5), (x, y) \}$, a relation from $B$ to $C$.
 We expect $\char"1d4ad_1 \circ \char"1d4ad_2 = \{ (1, 6), (2, 6) \}$.
 
-$$
-M(\char"1d4ad_1) =
+$$M(\char"1d4ad_1) =
 \begin{bmatrix}
 0&1&0&0 \\ 0&1&0&0 \\ 0&0&1&1 \\ 0&0&0&0
 \end{bmatrix},
 M(\char"1d4ad_2) =
 \begin{bmatrix}
 1&0&0 \\ 0&1&0 \\ 0&0&0 \\ 0&0&0
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 
 $$M(\char"1d4ad_1)*M(\char"1d4ad_2)
 =\begin{bmatrix}
@@ -100,8 +98,7 @@ $$M(\char"1d4ad_1)*M(\char"1d4ad_2)
 =\begin{bmatrix}
 0&1&0 \\ 0&1&0 \\ 0&0&0 \\ 0&0&0
 \end{bmatrix}
-=M(\char"1d4ad_1 \circ \char"1d4ad_2)
-$$
+=M(\char"1d4ad_1 \circ \char"1d4ad_2)$$
 
 Apparently, $M(\char"1d4ad_1) * M(\char"1d4ad_2)$ represents our intended outcome.
 
@@ -109,32 +106,31 @@ Apparently, $M(\char"1d4ad_1) * M(\char"1d4ad_2)$ represents our intended outcom
 
 Let $A = \{ 1, 2, 3, 4 \}$ and $\char"1d4ad = \{ (1, 2), (1, 3), (2, 4), (3, 2) \}$, as in the example of [**Power of $\char"1d4ad$**(click me to jump)](#powerR). We define the relation matrix for $\char"1d4ad$ as follows:
 $M(\char"1d4ad)$ is the $4 \times 4$ (0,1)-matrix whose entries $m_{ij}$, for $1 \leq i,j \leq 4$, are given by
-$$ m_{ig}
+$$m_{ig}
 = \begin{cases}
 1 &\text{if (i, j)} \in \char"1d4ad, \\
 0 &\text{otherwise.}
 \end{cases}$$
 
 In this case, we find that
-$$ M(\char"1d4ad)
+$$M(\char"1d4ad)
 = \begin{bmatrix}
 0&1&1&0 \\ 0&0&0&1 \\ 0&1&0&0 \\ 0&0&0&0
-\end{bmatrix} $$
+\end{bmatrix}$$
 
 We compute $(M(\char"1d4ad))^2$ using $M(\char"1d4ad) * M(\char"1d4ad)$, we find that
-$$ (M(\char"1d4ad))^2
+$$(M(\char"1d4ad))^2
 =\begin{bmatrix}
 0&1&0&1 \\ 0&0&0&0 \\ 0&0&0&1 \\ 0&0&0&0
-\end{bmatrix} $$
+\end{bmatrix}$$
 which coincides with the relation matrix for $\char"1d4ad \circ \char"1d4ad = \char"1d4ad^2$. Furthermore
 $$(M(\char"1d4ad))^4
 =\begin{bmatrix}
 0&0&0&0 \\ 0&0&0&0 \\ 0&0&0&0 \\ 0&0&0&0
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 which is also the relation matrix for the relation $\char"1d4ad^4$.
 
-In this example, we observe that $ (M(\char"1d4ad))^4 = M(\char"1d4ad^4) $, and this observation generalizes to other cases.
+In this example, we observe that $(M(\char"1d4ad))^4 = M(\char"1d4ad^4)$, and this observation generalizes to other cases.
 
 Let $A$ be a set with $|A| = n$ and $\char"1d4ad$ a relation on $A$. If $M(\char"1d4ad)$ is the relation matrix for $\char"1d4ad$, then
 
@@ -164,8 +160,8 @@ In fact, there are 8 different (0, 1)-matrix $G$ for $E \leq G$.
 ## Identity matrix
 
 An identity matrix, denoted as $I_n$, for $n \in \Z^+$, is defined by the matrix $(\delta_{ij})_{n \times n}$ where
-$$ \delta_{ij} = \begin{cases} 1 &\text{if} &i = j, \\
-0 &\text{if} &i \neq j. \end{cases} $$
+$$\delta_{ij} = \begin{cases} 1 &\text{if} &i = j, \\
+0 &\text{if} &i \neq j. \end{cases}$$
 
 ---
 

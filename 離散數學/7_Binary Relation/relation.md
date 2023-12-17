@@ -39,7 +39,7 @@ Given $A = |x|$, then we have $|A| \times |A| = x^2$ number of permutation. Each
 
 ## Reflexive
 
-A relation $\mathcal{R}$ on a set $A$ is called reflexive if, for **all** $x \in A$, $(x, x) \in \mathcal{R}$.
+A relation $\char"1d4ad$ on a set $A$ is called reflexive if, for **all** $x \in A$, $(x, x) \in \char"1d4ad$.
 
 <font color=#FF5151>**Note:** We say that a relation $\char"1d4ad$ is relexive **if and noly if** each element of $A$ is related to itself.  
 For instance, if $A = \{ 1, 2, 3 \}$, a relation $\char"1d4ad \sube A \times A$ will be reflexive **if and only if** $\char"1d4ad \supe \{ (1, 1), (2, 2), (3, 3) \}$.</font>  
@@ -47,9 +47,9 @@ For instance, if $A = \{ 1, 2, 3 \}$, a relation $\char"1d4ad \sube A \times A$ 
 ### Example
 
 If a FSM set $A$ with $|A| = n$. How many of relations are reflexive?  
-Because $ |A| = n $, we have $ |A| \times |A| = n^2 $. Thus, there are $ 2^{n^2} $ relations on $ A $.
+Because $|A| = n$, we have $|A| \times |A| = n^2$. Thus, there are $2^{n^2}$ relations on $A$ .
 
-A reflexive relation $ \char"1d4ad $ includes at least $ n $ elements, as each element of $ A $ is related to itself. When constructing a reflexive relation $ \char"1d4ad $ on $ A $, considering the other $ n^2 - n $ pairs in $ A \times A $ (those of the form $ (a_i, a_j) $, where $ i \neq j $ for $ 1 \leq i, j \leq n $), we either include or exclude each of these ordered pairs. Consequently, there are $ 2^{n^2 - n} $ reflexive relations on $ A $.
+A reflexive relation $\char"1d4ad$ includes at least $n$ elements, as each element of $A$ is related to itself. When constructing a reflexive relation $\char"1d4ad$ on $A$, considering the other $n^2 - n$ pairs in $A \times A$ (those of the form $(a_i, a_j)$, where $ i \neq j $for $ 1 \leq i, j \leq n$), we either include or exclude each of these ordered pairs. Consequently, there are $2^{n^2 - n}$ reflexive relations on $A$.
 
 ---
 
@@ -70,7 +70,7 @@ With $A = \{ 1, 2, 3 \}$, we have:
 
 ## Transitive
 
-For a a set A, a relation $\char"1d4ad$ on A is called transitive if, for all $x, y, z \in A$, $(x, y), (y, z) \in \char"1d4ad \Rightarrow (x, z) \in \char"1d4ad $.
+For a a set A, a relation $\char"1d4ad$ on A is called transitive if, for all $x, y, z \in A$, $(x, y), (y, z) \in \char"1d4ad \Rightarrow (x, z) \in \char"1d4ad$.
 
 ### Example
 
@@ -122,16 +122,16 @@ $\char"1d4ad _A = \{ (1, 1), (1, 2), (1, 3), (1, 4), (1, 6), (1, 12), (2, 2), (2
 
 We find that there are 18 ordered pairs in $\char"1d4ad _A$; however, we should be definitely discouraged by this method of simply *listing* all the ordered pairs.
 We may write $12 = 2^2 \times 3^1$ and then realize that if $(c, d) \in \char"1d4ad $, then
-$$ c = 2^m \times 3^n \space and \space d = 2^p \times 3^q ,$$
+$$c = 2^m \times 3^n \space and \space d = 2^p \times 3^q ,$$
 where $m, n, p, q \in \N$ with $0 \leq m \leq p \leq 2$ and  $0 \leq n \leq q \leq 1$.
 We find that $m, p$ is simply a selection of size 2 from 3. Namely, the set $\{ 0, 1, 2 \}$ where the relations are allowed. To calculate it, there are $\dbinom{2 + 3 - 1}{2} = \dbinom{{4}}{2} = 6$ ways. And in like manner, $n$ and $q$ can be selected in $\dbinom{2+2-1}{2} = 3$ ways.
 Apparently, there are $ 6 \times 3 = 18$ ordered pairs in $\char"1d4ad$ as we found by literally listing all of them.
 
-For all $n \in \Z ^+$, we can write $n = p_1 ^ {e_1} + p_2 ^ {e_2} + p_3 ^ {e_3} ... p_k ^ {e_k}$, where $k \in \Z ^+$ and $p_1 \le p_2 \le p_3 \le ... \le p_k$, and $p_i$ is a prime and $e_i \in \Z ^+$ for each $1 \leq i \leq k$.
+For all $n \in \Z^+$, we can write $n = p_1 ^ {e_1} + p_2 ^ {e_2} + p_3 ^ {e_3} ... p_k ^ {e_k}$, where $k \in \Z^+$ and $p_1 \le p_2 \le p_3 \le ... \le p_k$, and $p_i$ is a prime and $e_i \in \Z^+$ for each $1 \leq i \leq k$.
 Then $n$ has $\prod _{i=1} ^{k} (e_i + 1)$ positive integer dividors.
 
 <font color=#FF5151>**Conclusion:** The number of ordered pairs in the relation is
-$$ \prod _{i=1} ^{k} \dbinom{(e_i + 1) + 2 -1}{2} = \prod _{i+1} ^{k} \dbinom{e_i + 2}{2} $$</font>
+$$\prod_{i=1}^{k} \dbinom{(e_i + 1) + 2 -1}{2} = \prod _{i+1} ^{k} \dbinom{e_i + 2}{2}$$</font>
 
 ---
 
@@ -150,11 +150,11 @@ $ = A \times A$
 are all equivalance relations on $A$.
 
 1. Let $A = \{ 1, 2, 3, 4, 5 \}$, $B = \{ x, y, z \}$, and $ f : A \rightarrow B$ be the onto function
-$$ f = \{ (1, x), (2, x), (3, z), (4, y), (5, y) \} $$
+$$f = \{ (1, x), (2, x), (3, z), (4, y), (5, y) \}$$
 Define the realtion $\char"1d4ad$ on $A$ by $a \char"1d4ad b$ if $f(a) = f(b)$.
 We find that
 
-- $\char"1d4ad$ is reflexive because $f$ is a function; then $ \forall a \in A, \space f(a) = f(a) $.
+- $\char"1d4ad$ is reflexive because $f$ is a function; then $ \forall a \in A, \space f(a) = f(a)$.
 - $\char"1d4ad$ is symmectric because $ \forall a,b \in A$, if $f(a) = f(b)$ then $f(b) = f(a)$; therefore $ a \char"1d4ad b = b \char"1d4ad a$.
 - $\char"1d4ad$ is transitive because $\forall a, b, c \in A$, if $f(a) = f(b)$, and $f(b) = f(c)$, then $f(a) = f(c)$.
 - Therefore, $\char"1d4ad$ is an equivalance realtions.
@@ -176,9 +176,9 @@ If $\char"1d4ad$ is a relation on $A$, then $\char"1d4ad$ is both partial order 
 
 #### Why there is only one equality relation on set $A$ ?
 
-- Reflexive: $ \char"1d4ad : \{ (x, x) \in \char"1d4ad \space | \space \forall x \in A \}$
-- Symmetric: $ \char"1d4ad : \{ (x, y), (y, x) \in \char"1d4ad \space | \space \forall x, y \in A \}$
-- Antisymmetric: $ \forall x, y \in A$, if $(x, y)$ and $(y, x)$ $\in A$, then $x = y$
+- Reflexive: $\char"1d4ad : \{ (x, x) \in \char"1d4ad \space | \space \forall x \in A \}$
+- Symmetric: $\char"1d4ad : \{ (x, y), (y, x) \in \char"1d4ad \space | \space \forall x, y \in A \}$
+- Antisymmetric: $\forall x, y \in A$, if $(x, y)$ and $(y, x)$ $\in A$, then $x = y$
 - Transitive: $\forall x, y, z \in A$, if $(x, y)$ and $(y, z)$ $\in A$, then $(x, z) \in A$
 
 Because it is reflexive, $\char"1d4ad$ must contain $(x, x) \space | \space x \in A$.
