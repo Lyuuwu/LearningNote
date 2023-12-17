@@ -10,19 +10,19 @@ For sets A, B, any subsets of $A \times B$ is called **binary relation** from A 
 
 ## Definition of Relation
 
-We use $(x, y) \in \char"1d4ad$ or $ x \char"1d4ad y $ to indicate that x and y have the relation $ \char"1d4ad $.  
+We use $(x, y) \in \mathcal{R}$ or $x \mathcal{R} y$ to indicate that x and y have the relation $\mathcal{R}$.  
 
 ---
 
 ## Demonstrate $\char"1d4ad$
 
-$A = \{ 1, 2, 3 \} $, $B = \{ A, B, C, D \} $, $\char"1d4ad = \{ (1, C ), ( 2, C ), ( 3, A ) \} $
+$A = \{ 1, 2, 3 \}$, $B = \{ A, B, C, D \}$, $\char"1d4ad = \{ (1, C ), ( 2, C ), ( 3, A ) \}$
 
-**Use picture to represent the $\char"1d4ad$**
+**Use picture to represent the $\mathcal{R}$**
 ![Alt text](relation_TwoSet.png)
 
-**Use matrix to represent the $\char"1d4ad$**
-$M_{\char"1d4ad} =
+**Use matrix to represent the $\mathcal{R}$**
+$M_{\mathcal{R}} =
 \begin{bmatrix}
 0 & 0 & 1 & 0 \\
 0 & 0 & 1 & 0 \\
@@ -39,7 +39,7 @@ Given $A = |x|$, then we have $|A| \times |A| = x^2$ number of permutation. Each
 
 ## Reflexive
 
-A relation $\char"1d4ad$ on a set $A$ is called reflexive if, for **all** $x \in A$, $(x, x) \in \char"1d4ad$.
+A relation $\mathcal{R}$ on a set $A$ is called reflexive if, for **all** $x \in A$, $(x, x) \in \mathcal{R}$.
 
 <font color=#FF5151>**Note:** We say that a relation $\char"1d4ad$ is relexive **if and noly if** each element of $A$ is related to itself.  
 For instance, if $A = \{ 1, 2, 3 \}$, a relation $\char"1d4ad \sube A \times A$ will be reflexive **if and only if** $\char"1d4ad \supe \{ (1, 1), (2, 2), (3, 3) \}$.</font>  
