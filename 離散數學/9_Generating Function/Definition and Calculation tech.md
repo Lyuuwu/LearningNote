@@ -15,7 +15,7 @@ $$\binom{-n}{r} = \frac{-n(-n-1)(-n-2)...(-n-r+1)}{r!} = (-1)^r \frac{(n+r-1)!}{
 ## $(1 + x)^{-n}$
 
 For any $n \in \mathbb{Z}^+$, the Maclaurin series expansion for $(1+x)^n$ is given by
-$$(1+x)^{-n} = 1 + \frac{(-n)(-n-1)x^2}{2!} +\frac{(-n)(-n-1)(-n-2)x^3}{3!} + ... \\ = 1 + \sum_{r=1}^{\infin} \frac{(-n)(-n-1)(-n-2)...(-n-r+1)}{r!} x^r \\ =\sum_{r=0}^{\infin}(-1)^r\binom{n+r-1}{r}x^r = \sum_{r=0}^{\infin}\binom{-n}{r}x^r$$
+$$(1+x)^{-n} = 1 + \frac{(-n)(-n-1)x^2}{2!} +\frac{(-n)(-n-1)(-n-2)x^3}{3!} + ... \\ = 1 + \sum_{r=1}^{\infty} \frac{(-n)(-n-1)(-n-2)...(-n-r+1)}{r!} x^r \\ =\sum_{r=0}^{\infty}(-1)^r\binom{n+r-1}{r}x^r = \sum_{r=0}^{\infty}\binom{-n}{r}x^r$$
 
 ### Example
 
@@ -26,16 +26,16 @@ With the definition of $(1 + x)^{-n}$, the coefficient of $x^5$ is $\binom{-7}{5
 #### What sequence does $(1+3x)^{-1/3}$ generate
 
 With the definition of $(1+x)^{-n}$,  
-$$(1+3x)^{-1/3} = 1 + \sum_{r=1}^{\infin}\frac{(-1/3)(-4/3)(-7/3)...((2-3r)/3)}{r!}(3x)^r \\ =1 + \sum_{r=1}^{\infin}\frac{(-1)(-4)(-7)...(2-3r)}{r!}x^r$$
+$$(1+3x)^{-1/3} = 1 + \sum_{r=1}^{\infty}\frac{(-1/3)(-4/3)(-7/3)...((2-3r)/3)}{r!}(3x)^r \\ =1 + \sum_{r=1}^{\infty}\frac{(-1)(-4)(-7)...(2-3r)}{r!}x^r$$
 Therefore, $(1+3x)^{-1/3}$ generates the sequence $1, -1, (-1)(-4)/2!, (-1)(-4)(-7)/3!, ..., (-1)(-4)(-7)...(2-3r)/r!, ...$.
 
 ---
 
 ## Definition of Generating function
 
-Let $a_1, a_2, a_3, a_4, ..., a_{\infin}$ be a sequence of real number.  
+Let $a_1, a_2, a_3, a_4, ..., a_{\infty}$ be a sequence of real number.  
 The funtion
-$$f(x) = a_0 + a_1 x + a_2 x^2 + ... = \sum_{i=0}^{\infin}a_i x^i$$
+$$f(x) = a_0 + a_1 x + a_2 x^2 + ... = \sum_{i=0}^{\infty}a_i x^i$$
 is called the generating function for the given sequence.
 
 ### Example 1
@@ -59,7 +59,7 @@ and $\frac{1 - x^{n+1}}{1-x}$ is the generating function for the sequence $1, 1,
 
 ---
 
-Extending *Example 2* from the *Definition of Generating Function*, we find that $\frac{1-x^{n+1}}{1-x}$ represents the **sum of a geometric series** with $a_0 = 1$, $d = x$, and length $n+1$. The geometric series **converges** when $|x| < 1$. As $x$ approaches infinity, $\lim\limits_{x\rightarrow\infty}\frac{1-x^{n+1}}{1-x} = \frac{1}{1-x}$.
+Extending *Example 2* from the *Definition of Generating Function*, we find that $\frac{1-x^{n+1}}{1-x}$ represents the **sum of a geometric series** with $a_0 = 1$, $d = x$, and length $n+1$. The geometric series **converges** when $|x| < 1$. As $x$ approaches inftyity, $\lim\limits_{x\rightarrow\infty}\frac{1-x^{n+1}}{1-x} = \frac{1}{1-x}$.
 
 Therefore, $\frac{1}{1-x}$ serves as the generating function for the sequence $1, 1, 1, 1, \ldots$.
 
