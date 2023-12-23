@@ -27,7 +27,7 @@ With the definition of $(1 + x)^{-n}$, the coefficient of $x^5$ is $\binom{-7}{5
 
 With the definition of $(1+x)^{-n}$,  
 $$(1+3x)^{-1/3} = 1 + \sum_{r=1}^{\infty}\frac{(-1/3)(-4/3)(-7/3)...((2-3r)/3)}{r!}(3x)^r \\ =1 + \sum_{r=1}^{\infty}\frac{(-1)(-4)(-7)...(2-3r)}{r!}x^r$$
-Therefore, $(1+3x)^{-1/3}$ generates the sequence $1, -1, (-1)(-4)/2!, (-1)(-4)(-7)/3!, ..., (-1)(-4)(-7)...(2-3r)/r!, ...$.
+Therefore, $(1+3x)^{-1/3}$ generates the sequence $1, -1, (-1)(-4)/2!, (-1)(-4)(-7)/3!, ..., (-1)(-4)(-7)...(2-3r)/r!, ...$
 
 ---
 
@@ -40,7 +40,7 @@ is called the generating function for the given sequence.
 
 ### Example 1
 
-For any $n \in \Z^+$,  
+For any $n \in \mathbb{Z}^+$,  
 $$(1 + x)^n = \binom{n}{0} + \binom{n}{1}x + \binom{n}{2}x^2 + ... + \binom{n}{n}x^n$$
 so $(1 + x)^n$ is the generating function for the sequence
 $$\binom{n}{0}, \binom{n}{1}, \binom{n}{2}, ..., \binom{n}{n}, 0, 0, 0, 0, ...$$
