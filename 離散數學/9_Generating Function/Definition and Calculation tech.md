@@ -74,11 +74,11 @@ The coefficient of $x^{15}$ is the coefficient of $x^{15}$ in $f(x) = [x^2/(1-x)
 Hence, the coefficient sought is that of $x^7$ in $(1-x)^{-4}$.
 Namely, the coefficient is $(-1)^7\binom{-4}{7} = (-1)^7(-1)^7\binom{10}{7} = 120$.
 
-### Verify that for all $n \in \mathbb{Z}^+$, $\binom{2n}{n} = \sum_{i=0}^{n}\binom{n}{i}^2$
+### Verify that for all $n \in \mathbb{Z}^+$, $\displaystyle \binom{2n}{n} = \sum_{i=0}^{n}\binom{n}{i}^2$
 
 Since $(1+x)^{2n} = [(1+x)^n]^2$, by comparing the coefficients, the coefficient of $x^n$ must be equal to the coefficient of $x^n$ in $(1+x)^n(1+x)^n$.
-Let $x^n = x^px^q$, then $p+q=10$. Consequently, the coefficient of $x^n$ in $(1+x)^n(1+x)^n$ is $\binom{n}{0}\binom{n}{n} + \binom{n}{1}\binom{n}{n-1} + ... + \binom{n}{n}\binom{n}{0} = \sum_{r=0}^{n}\binom{n}{r}\binom{n}{n-r}$.
-With $\binom{n}{r} = \binom{n}{n-r}$, for all $0 \leq r \leq n$, the result follows.
+Let $x^n = x^px^q$, then $p+q=10$. Consequently, the coefficient of $x^n$ in $(1+x)^n(1+x)^n$ is $\displaystyle \binom{n}{0}\binom{n}{n} + \binom{n}{1}\binom{n}{n-1} + ... + \binom{n}{n}\binom{n}{0} = \sum_{r=0}^{n}\binom{n}{r}\binom{n}{n-r}$.
+With $\dbinom{n}{r} = \dbinom{n}{n-r}$, for all $0 \leq r \leq n$, the result follows.
 
 ### Finding the Coefficient of $x^8$ in $\frac{1}{(x-3)(x-2)^2}$
 
@@ -125,8 +125,6 @@ To count the integer solutions for $c_1 + c_2 + c_3 + c_4 + c_5 = 14$, where $0 
 <font color=#F5151>**Note:** The conditions $c_2, c_3, c_4 \geq 2$ ensure that there are no consecutive integers in the subset.</font>
 
 The generating function representing the sum is given by:
-$$
-f(x) = (1 + x + x^2 + x^3 + \ldots)(x^2 + x^3 + x^4 + x^5 + \ldots)^3 (1 + x + x^2 + x^3 + \ldots) = x^6(1-x)^{-5}.
-$$
+$$f(x) = (1 + x + x^2 + x^3 + \ldots)(x^2 + x^3 + x^4 + x^5 + \ldots)^3 (1 + x + x^2 + x^3 + \ldots) = x^6(1-x)^{-5}.$$
 
 Thus, the answer is the coefficient of $x^{8}$ in $(1-x)^{-5}$, which is $(-1)^8\binom{-5}{8} = \binom{12}{8} = 495$.
