@@ -90,3 +90,15 @@ Since **machine language** is too difficult, abstruse and abstract for humans to
 Soft engineering involves designing and writing programs to solve tasks. However, nowadays, software engineering encompasses more than just these aspects.
 
 #### Operating Systems(os)
+
+Because some instructions are used frequently and written only once, this need for efficiency gave rise to the concept of operating systems. While in the past, operating systems were primarily for managing and facilitating access to a computer's components by a program, today, operating systems serve a much broader range of functions, including efficient resource management, providing a user interface, and supporting a variety of applications and services.
+
+---
+
+## Computer Generation (1950 - present)
+
+- **First generation:** Computers were bulky and used vacuum tubes as electronic switches. They were only affordable for big organization.
+- **Second generation:** Computers transitioned from using **vacuum tubes** to **transistors**, which reduced costs and size significantly. The invention of two-high-level programming languages, **FORTRAN** and **COBOL**, made programming much easier. These languages enabled individuals to solve programming problems without needing to delve into the electronic details of computer architecture.
+- **Third generation:** The invention of **integrated circuit** (IC), which incorporates transistors, wiring, and other components on a small chip, further reduced the size and cost of computers. This innovation, along with advancements in transistor technology, led to the emergence of **minicomputers** in the market. Additionally, the availability of **canned programs**, which are software packages providing fixed solutions to specific problems, made computers more accessible to a wider audience.
+- **Fourth generation:** The Altair 8800, one of the first personal computers, was introduced. Advancements in teh electronic industry enabled entire computer subsystems to fit onto a single circuit board. Computer networks also began to emerge, laying the foundation for modern networking technologies.
+- **Fifth generation:** This generation witnessed the emergence of laptop, palmtop PC, improvements in secondary storage media(CD-ROM, DVD and so on), the use of multimedia, and the phenomenon of virtual reality.
