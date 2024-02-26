@@ -90,7 +90,7 @@ $$\dbinom{n + r - 1}{n}$$
 $\displaystyle
 (a+b)^n = \\
 \binom{n}{0}a^0b^n + \binom{n}{1}a^{1}b^{n-1} + ... + \binom{n}{n-1}a^{n-1}b^{1} + \binom{n}{n}a^nb^0 = \\
-\sum_{i=0}^{n}a^ib^{n-i}$
+\sum_{i=0}^{n}\binom{n}{i}a^ib^{n-i}$
 
 #### Extention of Binomial Theroem
 
