@@ -4,9 +4,9 @@
 
 | Order is Relevant | Repitions are Allowed | Type of Result | Formula |
 | :--: | :--: | :--: | :--: |
-| Yes  | No | [Permutation](#permutation) | $ P(n, r) = \dfrac{n!}{(n-r)!} $ |
-| No | No | [Combination](#combination) |  $ C(n, r) = \dfrac{n!}{r!(n-r)!} = \dbinom{n}{r} $
-| No | Yes | [Combination with Repetion](#combination_repetition) | $ \dbinom{n + r -1}{n} $
+| Yes  | No | [Permutation](#permutation) | $P(n, r) = \dfrac{n!}{(n-r)!}$ |
+| No | No | [Combination](#combination) |  $C(n, r) = \dfrac{n!}{r!(n-r)!} = \dbinom{n}{r}$ |
+| No | Yes | [Combination with Repetion](#combination_repetition) | $\dbinom{n + r -1}{n}$ |
 
 ---
 
@@ -90,7 +90,7 @@ $$\dbinom{n + r - 1}{n}$$
 $\displaystyle
 (a+b)^n = \\
 \binom{n}{0}a^0b^n + \binom{n}{1}a^{1}b^{n-1} + ... + \binom{n}{n-1}a^{n-1}b^{1} + \binom{n}{n}a^nb^0 = \\
-\sum_{i=0}^{n}a^ib^{n-i}$
+\sum_{i=0}^{n}\binom{n}{i}a^ib^{n-i}$
 
 #### Extention of Binomial Theroem
 
