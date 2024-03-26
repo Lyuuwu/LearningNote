@@ -2,7 +2,7 @@
 
 ## Key point
 
-| Order is Relevant | Repitions are Allowed | Type of Result | Formula |
+| Order is Relevant | Repetitions are Allowed | Type of Result | Formula |
 | :--: | :--: | :--: | :--: |
 | Yes  | No | [Permutation](#permutation) | $P(n, r) = \dfrac{n!}{(n-r)!}$ |
 | No | No | [Combination](#combination) |  $C(n, r) = \dfrac{n!}{r!(n-r)!} = \dbinom{n}{r}$ |
