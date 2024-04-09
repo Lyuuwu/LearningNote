@@ -2,11 +2,11 @@
 
 ## Key point
 
-| Order is Relevant | Repitions are Allowed | Type of Result | Formula |
+| Order is Relevant | Repetitions are Allowed | Type of Result | Formula |
 | :--: | :--: | :--: | :--: |
 | Yes  | No | [Permutation](#permutation) | $P(n, r) = \dfrac{n!}{(n-r)!}$ |
 | No | No | [Combination](#combination) |  $C(n, r) = \dfrac{n!}{r!(n-r)!} = \dbinom{n}{r}$ |
-| No | Yes | [Combination with Repetion](#combination_repetition) | $\dbinom{n + r -1}{n}$ |
+| No | Yes | [Combination with Repetition](#combination_repetition) | $\dbinom{n + r -1}{n}$ |
 
 ---
 
@@ -69,13 +69,13 @@ $$\dbinom{n + r - 1}{n}$$
     3. Use the formula for combinations: $\binom{n + r - 1}{r}$.
     $ \space $
     - $\dbinom{7 + 4 - 1}{7} \times \dbinom{4 + 4 - 1}{4} = \dbinom{10}{7} \times \dbinom{7}{4}$.
-2. at-least-distibution (distinct to distinct)
+2. at-least-distribution (distinct to distinct)
     - **Description:**
     In how many ways can Beth place 24 **different** books on four shelves so that there is at least one book on each shelf? (For any of these arrangements consider the books on each shelf to be placed one next to the other, with the first book at the left of the shelf.)
     - **Solution:**
    1. Assume there are 24 **identical** books that need to be distributed among 4 shelves.
    2. Choose 4 books to be placed on the shelves to ensure there is at least one book on each shelf.
-   3. Distribute the reaming 20 **identical** books among 4 shelfs.
+   3. Distribute the reaming 20 **identical** books among 4 shelves.
       - $\dbinom{20+4-1}{20} = \dbinom{23}{20}$
    4. Therefore, there are a total of 24 books on the 4 shelves. Visualize this as having 24 empty spaces on the 4 shelves, and now we need to place 24 **distinct** books into these empty spaces.
    5. Arrange the 24 different books in the empty spaces.
@@ -85,21 +85,21 @@ $$\dbinom{n + r - 1}{n}$$
 
 ---
 
-### Binomial Theroem
+### Binomial Theorem
 
 $\displaystyle
 (a+b)^n = \\
 \binom{n}{0}a^0b^n + \binom{n}{1}a^{1}b^{n-1} + ... + \binom{n}{n-1}a^{n-1}b^{1} + \binom{n}{n}a^nb^0 = \\
 \sum_{i=0}^{n}\binom{n}{i}a^ib^{n-i}$
 
-#### Extention of Binomial Theroem
+#### Extension of Binomial Theorem
 
 1. $\displaystyle \sum_{i=0}^{n} \binom{n}{i} = (1 + 1)^n =  2^n$
 2. $\displaystyle \sum_{i=0}^{n} (-1)^i \binom{n}{i} = (1 -1)^n = 0$
 
 #### Classic Problems
 
-1. **Qustion:** For any positive integer determine:
+1. **Question:** For any positive integer determine:
 $$ \displaystyle \sum_{i=0}^{n} \dfrac{1}{i! \ (n-i)!} $$
 
 **Solutions:**
