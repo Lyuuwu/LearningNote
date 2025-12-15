@@ -247,6 +247,6 @@ $Var(X) = \lambda t$
 
 ## Binomial Distribution & Poisson Distribution
 
-當二項分配的`成功率很低 `或是`次數很多`的時候，二項分配會逼近於卜瓦松分配
+當二項分配的`成功率很低`或是`次數很多`的時候，二項分配會逼近於卜瓦松分配
 
 $b(x;n, p) \approx p(x;\lambda t = np)$
