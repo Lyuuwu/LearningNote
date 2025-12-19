@@ -250,3 +250,79 @@ $Var(X) = \lambda t$
 當二項分配的`成功率很低`或是`次數很多`的時候，二項分配會逼近於卜瓦松分配
 
 $b(x;n, p) \approx p(x;\lambda t = np)$
+
+---
+
+## Continuous Uniform Distribution (連續均勻分布)
+
+density function(一個區間內的機率):
+
+$f(x;A,B)=
+\begin{cases}
+\dfrac{1}{B-A}, & A \le x \le B,\\
+0, & \text{elsewhere}.
+\end{cases}$
+
+$\mu = \dfrac{A+B}{2}$
+
+$\sigma^2 = \dfrac{(B-A)^2}{12}$
+
+---
+
+## Normal Distribution (常態分佈)
+
+Normal Distribution 又被稱為 Gaussian Distribution(高斯分布)
+
+常態分布的機率會根據 $\mu$ 跟 $\sigma$，因此記為 $n(x; \mu, \sigma)$
+
+$n(x;\mu,\sigma)=\dfrac{1}{\sqrt{2 \pi} \sigma} e^{-\dfrac{1}{2 \sigma^2}(x-\mu)^2}$
+
+### Property of normal distribution
+
+1. mode(眾數) 發生在 $\mu$ 的位置 \
+$mean = median = mode = \mu$
+2. $x=\mu$ 為對稱軸
+3. 反曲線(往下凹變成往上凹)發生在 $\mu \pm \sigma$
+
+### Standardization of normal distribution (標準化)
+
+此標準化叫作 Z-score
+
+$$Z=\dfrac{X-\mu}{\sigma}$$
+
+#### 為什麼要標準化
+
+每個分布都有自己的 $\mu$ 跟 $\sigma$，在積分的時候很麻煩，如果都**一起搬到同一個尺度** ($\mu =0$, $\sigma =1$)
+
+#### 計算區間機率
+
+把端點對齊到 z-score 的空間，即可直接積分運算
+
+$$P(x_1 \lt X \lt x_2)$$
+
+$$z_1=\dfrac{x_1-\mu}{\sigma}, \qquad z_2=\dfrac{x_2-\mu}{\sigma}$$
+
+$$P(x_1 \lt X \lt x_2) = P(z_1 \lt Z \lt z_2)$$
+
+因此
+
+$$P(x_1 \lt X \lt x_2) = \int _{z_1} ^{z_2} n(z; 0, 1) = P(z_1 \lt Z \lt z_2)$$
+
+### Binomial
+
+只要二項分布的實驗次數夠多，就會趨近於常態分布
+
+$$\mu = np, \qquad \sigma^2 = npq$$
+
+$$Z=\dfrac{X-np}{\sqrt{(npq)}}$$
+
+當 $n \rightarrow \infty$ 的時候，就會是常態分佈 $n(z;0,1)$
+
+#### 常態近似簡單公式
+
+經驗法則: 只有當 $np$ 與 $n(1-p)$ 均大於等於5時，才會有比較好的結果
+
+- $P(X \le x) \rightarrow x + 0.5$
+- $P(X \lt x) \rightarrow x - 0.5$
+- $P(X \ge x) \rightarrow x - 0.5$
+- $P(X \gt x) \rightarrow x + 0.5$
